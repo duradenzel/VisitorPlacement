@@ -1,18 +1,26 @@
-html {
-  font-size: 14px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+#parcours{
+    border: 1px solid red;
+    height: 4rem;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.section{
+    
+ 
 }
 
-body {
-  margin-bottom: 60px;
+.section {
+    margin-right: 10px; /* Adjust the negative margin as needed to control the spacing */
+    border: 1px solid purple;
+}
+
+    
+
+.seat{
+    border: 1px solid gold;
 }
