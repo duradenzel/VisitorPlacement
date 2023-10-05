@@ -3,24 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-#parcours{
-    border: 1px solid red;
-    height: 4rem;
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
 }
 
-.section{
-    
- 
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#parcours {
+    background-color: #991e36;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .section {
-    margin-right: 10px; /* Adjust the negative margin as needed to control the spacing */
-    border: 1px solid purple;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-    
+    .section h2 {
+        background-color: #991e36;
+        color: #fff;
+        padding: 5px;
+        border-radius: 3px;
+    }
 
-.seat{
-    border: 1px solid gold;
+.seat-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.seat {
+    
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 1px;
+    border-radius: 3px;
+    text-align: center;
 }
