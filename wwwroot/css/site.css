@@ -51,4 +51,50 @@ body {
     margin: 1px;
     border-radius: 3px;
     text-align: center;
+    font-size: 12px;
 }
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    background-color: #192733;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+}
+
+.hover-text:hover .tooltip-text {
+    visibility: visible;
+}
+
+#top {
+    top: -40px;
+    left: -50%;
+}
+
+#bottom {
+    top: 25px;
+    left: -50%;
+}
+
+#
