@@ -8,11 +8,23 @@ namespace VisitorPlacement.Pages
     public class IndexModel : PageModel
     {
         public List<Section> Sections { get; set; }
+        public List<Visitor> Visitors { get; set; }
+
+        public int TotalSeats { get; set; }
 
         public void OnGet()
         {
-            var _seatingService = new SeatingService();
+            SeatingService _seatingService = new();
+            VisitorService _visitorService = new();
+            
+
+
             Sections = _seatingService.GenerateEventSeating();
+            Visitors = _visitorService.GenerateRandomVisitors(40);
+            Visitors = _seatingService.AssignVisitorsToSeats(Visitors, Sections);
+             TotalSeats = Sections.Sum(s => s.TotalSeats);
+            
+            
         }
     }
 }
